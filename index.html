@@ -1,0 +1,33 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>⚇</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+
+<button>🍔</button>
+
+<audio class="h" src="horse.mp3"> </audio>
+<img class="horse" src="https://media.giphy.com/media/YaZgr3Nj9DDI4/giphy.gif" alt="">
+
+
+<script>
+    
+    let message = '🍞🍅🥓🧀🥒';
+    $('body').append(message);
+
+    $('.horse').click(function(){
+        // $('horse').append(message);
+        $('.h').trigger('play');
+
+    /*$('button').click(function(){
+        $('body').append(message);*/
+    })
+
+</script>
+
+</body>
+</html>
