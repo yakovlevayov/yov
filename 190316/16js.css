@@ -1,0 +1,57 @@
+html {
+    background: url(https://pp.vk.me/c624327/v624327502/38277/5NOMmDOlGhA.jpg) center no-repeat;
+    background-size: cover;
+
+    font-family: helvetica;
+    position: relative;
+   
+  }
+
+  .zag{
+    font-size: 50px;
+    font-weight: bold;
+    color: white; 
+    min-height: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+.spisok{
+    /* height: 100vh ; */
+    width: 20%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.menu-el:hover{
+    color:pink;
+    cursor: pointer;
+}
+
+
+.modal{
+    display: none;
+    position: absolute;
+     /*  background: white;*/
+    width: 100vw;
+    height: 100vh;
+
+}
+.modal-el{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-el img{
+max-height: 70%;
+filter:url('#filter')
+}

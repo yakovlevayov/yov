@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="16js.css">
+</head>
+<body>
+<div class="all">
+
+<div class="modal">
+        <div class="modal-el"></div>
+</div>
+<div class="zag">УЭС АНДЕРСОН</div>   
+     <div class="spisok">
+            <div class="menu-el" data-img="fox_w.png">Лиса</div>
+            <div class="menu-el" data-img="barsuk.png">Барсук</div>
+            <div class="menu-el" data-img="fox.png">Лис</div>
+            <div class="menu-el" data-img="zaya.png">Заяц</div>
+            <div class="menu-el" data-img="v.png">Волк</div>
+     </div>
+    </div>
+
+</div>
+<svg>
+        <filter id="filter">
+          <feTurbulence
+            baseFrequency="0.015"
+            numOctaves="3"
+            result="wrap"
+            type="fractalNoise"
+          ></feTurbulence>
+          <feDisplacementMap
+            id="liquid"
+            class="liquid"
+            in="SourceGraphic"
+            in2="wrap"
+            scale="50"
+            xChannelSelector="R"
+            yChannelSelector="B"
+          ></feDisplacementMap>
+        </filter>
+      </svg>
+
+<script src="index.js"></script>
+            </body>
+</html>
